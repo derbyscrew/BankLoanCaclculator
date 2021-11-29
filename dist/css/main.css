@@ -59,8 +59,21 @@ h1 {
     .form-input .months p {
       padding: 0.5rem;
       color: #ccc; }
+  .form-input .apr {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333; }
+    .form-input .apr i {
+      margin: auto;
+      color: #ccc; }
+    .form-input .apr input {
+      width: 90%;
+      padding: 1rem;
+      font-size: 1rem; }
 
-.check-btn {
+.submit-btn {
   width: 100%;
   margin-top: 1rem;
   padding: 1rem;
@@ -69,7 +82,7 @@ h1 {
   color: #fff;
   border: none;
   transition: color 0.2s; }
-  .check-btn:hover {
+  .submit-btn:hover {
     cursor: pointer;
     color: #ccc; }
 
