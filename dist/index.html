@@ -10,65 +10,59 @@
   <title>Bank Loan Calculator</title>
 </head>
 <body>
-
   <div class="container">
     <!-- Header -->
     <h1><span><i class="fas fa-pound-sign"></i></span> Bank Loan Calculator</h1>
 
     <!-- Bank Loan Form -->
-    <form>
-      <div class="form-input">
+    <form class="loan-form">
+      <!-- How much user would like to Loan -->
+      <div class="form-input amount-section">
         <label for="amount">Amount</label>
-        <button class="btn minus-btn amount-minus-btn" type="button"><i class="fas fa-minus"></i></button>
         <div class="amount">
-          <i class="fas fa-pound-sign fa-2x"></i><input value="10000" class="amount-input">
+          <i class="fas fa-pound-sign fa-2x"></i><input class="amount-input">
         </div>
-        <button class="btn plus-btn amount-plus-btn" type="button"><i class="fas fa-plus"></i></button>
-      </div>
+      </div> 
 
-      <div class="form-input">
-        <label for="amount">Term</label>
-        <button class="btn minus-btn month-minus-btn" type="button"><i class="fas fa-minus"></i></button>
+      <!-- The payback period duration -->
+      <div class="form-input term-section">
+        <label for="term">Years</label>
         <div class="months">
           <i class="far fa-calendar-alt fa-2x"></i>
-          <input class="months-input" type="number" min="24" max="60" step="6" value="24">
-          <p>months</p>
+          <input class="months-input">
         </div>
-        <button class="btn plus-btn month-plus-btn" type="button"><i class="fas fa-plus"></i></button>
       </div>
 
-      <div class="form-input">
-        <label for="apr">Interest</label>
-        <button class="btn minus-btn apr-minus-btn" type="button"><i class="fas fa-minus"></i></button>
-        <div class="apr">
+      <!-- Interest Rate -->
+      <div class="form-input interest-section">
+        <label for="interest">Interest</label>
+        <div class="interest">
           <i class="fas fa-percent fa-2x"></i>
-          <input class="apr-input">
+          <input class="interest-input">
         </div>
-        <button class="btn plus-btn apr-plus-btn" type="button"><i class="fas fa-plus"></i></button>
       </div>
 
-      <button type="button" class="submit-btn">Calculate</button>
+      <button type="submit" class="submit-btn">Calculate</button>
     </form>
 
     <!-- Loan Results -->
     <div class="results">
       <div class="result-item">
-        <p class="">Monthly repayment</p>
-        <span>£221.09</span>
+        <p>Monthly repayment</p>
+        <span class="month-result">£221.09</span>
         <p>The same every month</p>
       </div>
       <div class="result-item">
-        <p class="">Total amount payable</p>
-        <span>£221.09</span>
+        <p>Total amount payable</p>
+        <span class="total-result">£221.09</span>
         <p>Loan required</p>
       </div>
       <div class="result-item">
-        <p class="">APR</p>
-        <span>£221.09</span>
+        <p>APR</p>
+        <span class="apr-result">£221.09</span>
         <p>Based on the details you entered</p>
       </div>
     </div>
-
   </div>
 
   <script src="./app.js"></script>
